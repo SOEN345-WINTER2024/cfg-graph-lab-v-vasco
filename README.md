@@ -99,7 +99,25 @@ This chapter gives you a brief overview o call graphs and PointsTo analysis in A
 |Find usages of a method| | [UsageFinder.java](src/main/java/dev/navids/soottutorial/intraanalysis/usagefinder/UsageFinder.java) | [UsageExample.java](demo/IntraAnalysis/usagefinder/UsageExample.java) |
 |Null Pointer Analysis ||[NullPointerAnalysis](src/main/java/dev/navids/soottutorial/intraanalysis/npanalysis/) | [NullPointerExample.java](demo/IntraAnalysis/NullPointerExample.java) |
 
+
 ### 6: Interprocedural analysis (:construction: WIP)
 |Title |Tutorial | Soot Code        | Example Input  |
 | :---: |:-------------: |:-------------:| :-----:|
 | | | | |
+
+
+# Lab 7
+Student: 
+- Victor Vasconcelos (40177135)
+## Answers to Calculator App questions
+-Step 1: ![CFG for onClick() function in BasicCalculator App](https://github.com/SOEN345-WINTER2024/cfg-graph-lab-v-vasco/assets/115432849/9c527446-3c92-47fa-8760-beaaf77f389d)
+-Step 2: 
+TR for NC = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22}
+Test Paths = {[1,2,22],[1,3,22],[1,4,22],[1,5,22],[1,6,22],[1,7,22],[1,8,22],[1,9,18,22],[1,9,19,22],[1,9,20,22],[1,9,21,22],[1,10,22],[1,11,22],[1,12,22],[1,13,22],[1,14,22],[1,15,22],[1,16,22],[1,17,22]}
+-Step 3:
+TR for EC = {(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12),(1,13),(1,14),(1,15),(1,16),(1,17),(9,18),(9,19),(9,20),(9,21),(2,22),(3,22),(4,22),(5,22),(6,22),(7,22),(8,22),(10,22),(11,22),(12,22),(13,22),(14,22),(15,22),(16,22),(17,22),(18,22),(19,22),(20,22),(21,22)}
+Test paths = {[1,2,22],[1,3,22],[1,4,22],[1,5,22],[1,6,22],[1,7,22],[1,8,22],[1,9,18,22],[1,9,19,22],[1,9,20,22],[1,9,21,22],[1,10,22],[1,11,22],[1,12,22],[1,13,22],[1,14,22],[1,15,22],[1,16,22],[1,17,22]}
+-Step 4;
+TR for Edge-Pair Coverage = {(1,2,22),(1,3,22),(1,4,22),(1,5,22),(1,6,22),(1,7,22),(1,8,22),(1,9,18),(1,9,19),(1,9,20),(1,9,21),(1,10,22),(1,11,22),(1,12,22),(1,13,22),(1,14,22),(1,15,22),(1,16,22),(1,17,22),(9,18,22),(9,19,22),(9,20,22),(9,21,22)} 
+Test paths = {[1,2,22],[1,3,22],[1,4,22],[1,5,22],[1,6,22],[1,7,22],[1,8,22],[1,9,18,22],[1,9,19,22],[1,9,20,22],[1,9,21,22],[1,10,22],[1,11,22],[1,12,22],[1,13,22],[1,14,22],[1,15,22],[1,16,22],[1,17,22]}
+-Step 5: ![EFG graph for BasicCalculator App](https://github.com/SOEN345-WINTER2024/cfg-graph-lab-v-vasco/assets/115432849/58fb0e03-e1d1-4f59-8b0c-c8694253d84e)
