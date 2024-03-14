@@ -3,6 +3,7 @@ Student:
 - Victor Vasconcelos (40177135)
 ## Answers to Calculator App questions
 -Step 1: ![CFG for onClick() function in BasicCalculator App](https://github.com/SOEN345-WINTER2024/cfg-graph-lab-v-vasco/assets/115432849/9c527446-3c92-47fa-8760-beaaf77f389d)
+
 -Step 2: 
 
 TR for NC = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22}
@@ -22,3 +23,24 @@ TR for Edge-Pair Coverage = {(1,2,22),(1,3,22),(1,4,22),(1,5,22),(1,6,22),(1,7,2
 Test paths = {[1,2,22],[1,3,22],[1,4,22],[1,5,22],[1,6,22],[1,7,22],[1,8,22],[1,9,18,22],[1,9,19,22],[1,9,20,22],[1,9,21,22],[1,10,22],[1,11,22],[1,12,22],[1,13,22],[1,14,22],[1,15,22],[1,16,22],[1,17,22]}
 
 -Step 5: ![EFG graph for BasicCalculator App](https://github.com/SOEN345-WINTER2024/cfg-graph-lab-v-vasco/assets/115432849/58fb0e03-e1d1-4f59-8b0c-c8694253d84e)
+
+
+## Answers to Project App (Mindustry) with selected method setSectorRules()
+-Step 1: ![CFG for setSectorRules() function in Mindustry app](https://github.com/SOEN345-WINTER2024/cfg-graph-lab-v-vasco/assets/115432849/a041acc3-6a40-4a39-a96c-2ac14475272a)
+
+-Step 2: 
+
+TR for NC = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+
+Test Paths = {[1,2,3,4,2,3,5,6,7,8,9,10,11,12,13,2,14,15,16]}
+
+-Step 3:
+
+TR for EC = {(1,2),(2,3),(2,14),(3,4),(3,5),(4,2),(5,6),(5,7),(6,7),(7,8),(7,9),(8,9),(9,10),(9,11),(10,11),(11,12),(11,13),(12,13),(13,2),(14,15),(14,16),(15,16)}
+
+Test Paths = {[1,2,3,4,2,3,5,6,7,8,9,10,11,12,13,2,14,15,16]}
+
+-Step 4:
+
+TR for Edge-Pair Coverage = {(1,2,3),(1,2,14),(2,3,4),(2,14,15),(2,14,16),(3,4,2),(3,5,6),(3,5,7),(4,2,14),(4,2,3),(5,6,7),(5,7,8),(5,7,9),(6,7,8),(6,7,9),(7,8,9),(7,9,10),(7,9,11),(8,9,10),(8,9,11),(9,10,11),(9,11,12),(9,11,13),(10,11,12),(10,11,13),(11,12,13),(11,13,2),(12,13,2),(13,2,3),(13,2,14),(14,15,16)}
+
